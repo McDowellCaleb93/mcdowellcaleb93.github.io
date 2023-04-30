@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My Website
+title: Microsoft Security Bazaar 
 
 # Your name to show in the footer
-author: Some Person
+author: Caleb McDowell
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -35,12 +35,15 @@ navbar-links:
 avatar: "/assets/img/avatar-icon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
+round-avatar: false
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
 #title-img: /path/to/image
 
+# Add custom CSS
+include:
+  - "/assets/css/custom.css"
 
 #####################################
 # --- Footer social media links --- #
@@ -49,33 +52,11 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
-#  medium: yourname
-#  reddit: yourname
-#  linkedin: daattali
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
-#  discord: invite/invite_code or users/userid 
-#  kaggle: yourname
-#  hackerrank: yourname
+  email: microsoftsecurity@cmcdowell.blog
+  rss: true
+  github: https://github.com/McDowellCaleb93/MicrosoftMVP
+  linkedin: https://www.linkedin.com/in/caleb-mcdowell-8972a2165?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bk08YIJ27SQuw4pFpxRpZww%3D%3D
+
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
@@ -89,15 +70,15 @@ rss-description: This website is a virtual proof that I'm awesome
 share-links-active:
   twitter: true
   facebook: true
-  linkedin: true
-  vk: false
+  linkedIn: true
+  Youtube: true
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "CMcDowell.blog"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
-excerpt_length: 50
+excerpt_length: 75
 
 # Whether or not to show an excerpt for every blog post in the feed page
 feed_show_excerpt: true
@@ -114,7 +95,7 @@ edit_page_button: true
 # Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
 # If this setting is off, then long sub-menu words might get cut off
 # See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
-navbar-var-length: false
+navbar-var-length: true
 
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"
@@ -123,19 +104,19 @@ navbar-var-length: false
 # --- Colours / background image --- #
 ######################################
 
-# Personalize the colours in your website. Colour values can be any valid CSS colour
+# Personalize the colors in your website. Color values can be any valid CSS color
 
-navbar-col: "#EAEAEA"
-navbar-text-col: "#404040"
-navbar-border-col: "#DDDDDD"
-page-col: "#FFFFFF"
-text-col: "#404040"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-footer-col: "#EAEAEA"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
-footer-hover-col: "#0085A1"
+navbar-col: "#5A5A5A" # Dark grey for the navbar background
+navbar-text-col: "#FFFFFF" # White for the navbar text
+navbar-border-col: "#3A3A3A" # Slightly darker grey for the navbar border
+page-col: "#F3F3F3" # Light grey for the page background
+text-col: "#1A1A1A" # Almost black for the text color
+link-col: "#0096F2" # Slightly brighter Microsoft blue for links
+hover-col: "#0072C6" # Darker, slightly brighter Microsoft blue for link hover effect
+footer-col: "#3A3A3A" # Dark grey for the footer background
+footer-text-col: "#CCCCCC" # Light grey for the footer text
+footer-link-col: "#FFFFFF" # White for the footer links
+footer-hover-col: "#0072C6" # Darker, slightly brighter Microsoft blue for footer link hover effect
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
@@ -247,10 +228,10 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "America/Chicago"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: /:categories/:year/:month/:day/:title/
 paginate: 5
 
 kramdown:
